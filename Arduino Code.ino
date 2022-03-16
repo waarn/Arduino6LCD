@@ -25,7 +25,7 @@ void loop() {
   pitchVal = analogRead(pitchPin);
   screenVal = analogRead(screenPin); 
   pitchMap = map(pitchVal, 0, 1023, 0, 16);
-  screenMap = map(screenVal, 0, 1023, 0, 6);
+  screenMap = map(screenVal, 0, 1023, 0, 5);
   
   lcdNUM = screenMap;
   lcdEN = lcdEnableMap[screenMap];
